@@ -46,6 +46,7 @@ client.on("interactionCreate", async (interaction) => {
 
 client.on("messageCreate", async (message) => {
     if (message.author.bot) return;
+    if (message.author.id != "377551134702829568") return;
     if (!message.content.startsWith(prefix)) return;
 
     const args = message.content.split(" ");
